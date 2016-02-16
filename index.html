@@ -1,12 +1,169 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Дизайн-студия "Nerds"</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,300&subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="clearfix">
+        <div class="logo">
+          <a href="index.html"><img src="img/nerds-logo.png" width="139" height="56" alt="Логотип студии"></a>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a class="active" href="index.html">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-basket"></i>Корзина</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+        <div class="slider">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slides">
+              <div class="slide">
+                <div class="slide-text">
+                  <div class="title">Долго, дорого, <br> скрупулезно.</div>
+                  <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+                  <a class="btn btn-red" href="">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-text">
+                  <div class="title">Любите ли вы математику, как любим ее мы?</div>
+                  <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+                  <a class="btn btn-red" href="">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slide">
+              <div class="slide-text">
+                  <div class="title">Только наркотики, только&nbsp;хардкор!</div>
+                  <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+                  <a class="btn btn-red" href="">Узнать больше</a>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
+    <main class="index-main">
+      <div class="container">
+        <section class="products clearfix">
+          <div class="column web-sites">
+            <div class="title">Веб-сайты</div>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="btn btn-red" href="#">Заказать</a>
+          </div>
+          <div class="column aps">
+            <div class="title">Приложения</div>
+            <p>Покорите топ-10 приложений в&nbsp;AppStrore и Google Play</p>
+            <a class="btn btn-green" href="#">Заказать</a>
+          </div>
+          <div class="column presentation">
+            <div class="title">Презентации</div>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="btn btn-yellow" href="#">Заказать</a>
+          </div>
+        </section>
 
+        <section class="about-us clearfix">
+          <div class="left-column">
+            <div class="title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</div>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+            <div class="title-list">Выполняем заказы на разработку:</div>
+            <ul class="user-list">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <div class="title-list">Как мы работаем:</div>
+            <ul class="user-list">
+              <li>С самоотдачей 146%</li>
+              <li>Соблюдая сроки на 100%</li>
+              <li>По предоплате 50%</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="partners">
+          <a class="logo" href="#">
+            <img src="img/glukhanko-logo.png" width="198" height="37" alt="Glukhanko">
+          </a>
+          <a class="logo" href="http://www.htmlacademy.ru">
+            <img src="img/htmlacademy-logo.png" width="199" height="68" alt="Html Academy">
+          </a>
+          <a class="logo" href="#">
+            <img src="img/borodinski-logo.png" width="209" height="86" alt="Barbershop Borodincki">
+          </a>
+        </section>
+      </div>
+
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="contacts">
+          <div class="title">Nёrds Design Studio</div>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn btn-red" href="#">Напишите нам</a>
+        </div>
+      </div>
+      <div class="map" id="map">
+          <img src="img/map.jpg">
+      </div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfh0r5Nwp_wmvz8hlGWSPNR1VfjL7wTl4&callback=initMap" async defer></script>
+
+
+      <div class="container clearfix">
+        <div class="footer-social">
+          <a class="btn-social" href="http://www.vk.com">
+            <i class="icon-vk"></i>Мы в Vkontakte
+          </a>
+          <a class="btn-social" href="http://www.facebook.com">
+            <i class="icon-facebook"></i>Мы в Facebook
+          </a>
+          <a class="btn-social" href="http://www.instagram.com">
+            <i class="icon-instagramm"></i>Мы в Instagram
+          </a>
+        </div>
+        <div class="promo">
+          <div class="title">Давайте дружить, это выгодно!</div>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+
+    </footer>
+
+      <script src="js/scripts.js"></script>
   </body>
 </html>
