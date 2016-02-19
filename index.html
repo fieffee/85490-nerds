@@ -5,7 +5,7 @@
     <title>Дизайн-студия "Nerds"</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,300&subset=latin,cyrillic">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
@@ -135,14 +135,28 @@
           <div class="title">Nёrds Design Studio</div>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn btn-red" href="#">Напишите нам</a>
+          <a class="btn btn-red btn-open-form" href="#">Напишите нам</a>
         </div>
       </div>
-      <div class="map" id="map">
-          <img src="img/map.jpg">
+      <div class="map no-js" id="map">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfh0r5Nwp_wmvz8hlGWSPNR1VfjL7wTl4&callback=initMap" async defer></script>
       </div>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfh0r5Nwp_wmvz8hlGWSPNR1VfjL7wTl4&callback=initMap" async defer></script>
 
+      <form class="window-form no-js" action="#" method="post">
+        <div class="left-column">
+          <label for="name" class="name">Ваше имя:</label>
+          <input class="name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" id="name">
+        </div>
+        <div class="right-column">
+          <label for="mail" class="mail">Ваш e-mail:</label>
+          <input class="mail" type="text" name="mail" value="" placeholder="Для отправки ответа" id="mail">
+        </div>
+        <p>Текст письма:</p>
+        <textarea class="text" name="text" rows="5" placeholder="В свободной форме"></textarea>
+        <button type="submit" class="btn btn-red btn-send">Отправить</button>
+        <button type="submit" class="btn btn-grey btn-cancel">Отмена</button>
+        <div class="btn-red btn-close"></div>
+      </form>
 
       <div class="container clearfix">
         <div class="footer-social">
@@ -164,6 +178,6 @@
 
     </footer>
 
-      <script src="js/scripts.js"></script>
+      <script src="js/scripts.min.js"></script>
   </body>
 </html>
